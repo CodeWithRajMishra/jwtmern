@@ -16,7 +16,7 @@ const Registration=()=>{
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try {
-             let api="http://localhost:8000/user/registration";
+             let api="https://jwtmern-uaak.onrender.com/user/registration";
              const response =await  axios.post(api, input);
              console.log(response);
              message.success(response.data.msg);

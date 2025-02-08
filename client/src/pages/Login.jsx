@@ -10,7 +10,7 @@ const navigate=useNavigate();
   const handleSubmit=async(e)=>{
     e.preventDefault();
    try {
-    let api="http://localhost:8000/user/login";
+    let api="https://jwtmern-uaak.onrender.com/user/login";
 
      const response= await axios.post(api, {email:email, password:password});
      console.log(response.data)
